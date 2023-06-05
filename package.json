@@ -1,8 +1,8 @@
 {
   "name": "parentheses-newline",
   "displayName": "Parentheses Newline",
-  "description": "Allows having Accept Suggestions On Enter enabled, while still being able to create newlines when cursor is inside empty parantheses. Typically useful when coding in Dart/Flutter, as you often want the closing parenthesis of a new widget to be on a new line instead of autocompleting the first suggestion in the suggestion list.",
-  "version": "0.0.1",
+  "description": "Smoother use of the Enter key both for Accept Selected Suggestion and for creating newlines.",
+  "version": "0.0.2",
   "icon": "parentheses_newline.png",
   "repository": "https://github.com/HenrikT/parentheses-newline",
   "publisher": "sorlys",
