@@ -1,0 +1,47 @@
+{
+  "name": "parentheses-newline",
+  "displayName": "Parentheses Newline",
+  "description": "Allows having Accept Suggestions On Enter enabled, while still being able to create newlines when cursor is inside empty parantheses. Typically useful when coding in Dart/Flutter, as you often want the closing parenthesis of a new widget to be on a new line instead of autocompleting the first suggestion in the suggestion list.",
+  "version": "0.0.1",
+  "icon": "parentheses_newline.png",
+  "repository": "https://github.com/HenrikT/parentheses-newline",
+  "publisher": "sorlys",
+  "author": "Henrik Trandem",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/parentheses-newline.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "parentheses-newline.insertNewlineOrAcceptSuggestion",
+        "title": "Insert Newline Or Accepst Suggestion"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.78.0",
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
+    "eslint": "^8.39.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^5.0.4",
+    "@vscode/test-electron": "^2.3.0"
+  }
+}
